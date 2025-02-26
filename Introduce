@@ -1,0 +1,21 @@
+class Person
+{
+    String name;
+    int years;
+    public Person(String name,int years)
+    {
+        this.name=name;
+        this.years=years;
+    }
+    public void introduce()
+    {
+        System.out.println("Name:"+name);
+        System.out.println("Years:"+years);
+        System.out.println("My name is"+name+"i am working "+years+"in college");
+    }
+    public static void main (String[] args)
+    {
+        Person a=new Person("NITHYA",3);
+        a.introduce();
+    }
+    }
