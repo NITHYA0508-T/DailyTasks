@@ -1,0 +1,28 @@
+
+
+class Employee {
+    private double salary;
+    public double getSalary() {
+        return salary;
+    }
+    public void setSalary(double salary) {
+        if (salary >= 30000) {
+            this.salary = salary;
+        } else {
+            System.out.println("Salary must be at least 30000.");
+        }
+    }
+}
+
+public class Main {
+    public static void main(String[] args) {
+        Employee emp = new Employee();
+        emp.setSalary(35000); 
+        System.out.println("Salary: " + emp.getSalary());
+
+        emp.setSalary(25000); 
+        System.out.println("Salary: " + emp.getSalary()); 
+    }
+}
+
+
